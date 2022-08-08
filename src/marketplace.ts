@@ -392,7 +392,7 @@ export function handleEV_NFT_Listed(event: EV_NFT_Listed): void {
   if(!entity){
     entity = new NFTItem(event.params.tokenId.toI32().toString());
   }
-  entity.status = event.params.listed.toString();
+  entity.status = event.params.listed ? "listed" : "notlisted";
   entity.price = event.params.price.toString();
   entity.updatedate = event.params.timeStamp.toString();
   entity.save();
