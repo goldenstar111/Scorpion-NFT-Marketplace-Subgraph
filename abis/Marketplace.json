@@ -1,5 +1,9 @@
 [
-  { "inputs": [], "stateMutability": "nonpayable", "type": "constructor" },
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
   {
     "anonymous": false,
     "inputs": [
@@ -165,7 +169,11 @@
     "inputs": [],
     "name": "Count_Listed",
     "outputs": [
-      { "internalType": "uint256", "name": "_value", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "_value",
+        "type": "uint256"
+      }
     ],
     "stateMutability": "view",
     "type": "function"
@@ -174,7 +182,11 @@
     "inputs": [],
     "name": "Count_Minted",
     "outputs": [
-      { "internalType": "uint256", "name": "_value", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "_value",
+        "type": "uint256"
+      }
     ],
     "stateMutability": "view",
     "type": "function"
@@ -182,23 +194,51 @@
   {
     "inputs": [],
     "name": "ScorpionNFTAddr",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "_addr", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "_addr",
+        "type": "address"
+      }
     ],
     "name": "balanceOf",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
-    "inputs": [{ "internalType": "uint32", "name": "id", "type": "uint32" }],
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "id",
+        "type": "uint32"
+      }
+    ],
     "name": "check_minted",
-    "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
@@ -216,7 +256,13 @@
     "type": "function"
   },
   {
-    "inputs": [{ "internalType": "uint32", "name": "_id", "type": "uint32" }],
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_id",
+        "type": "uint32"
+      }
+    ],
     "name": "dropNFTById",
     "outputs": [],
     "stateMutability": "nonpayable",
@@ -224,7 +270,11 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "_holder", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "_holder",
+        "type": "address"
+      }
     ],
     "name": "fetchMyNFTs",
     "outputs": [
@@ -235,9 +285,21 @@
             "name": "holder",
             "type": "address"
           },
-          { "internalType": "uint256", "name": "price", "type": "uint256" },
-          { "internalType": "bool", "name": "listed", "type": "bool" },
-          { "internalType": "uint8", "name": "level", "type": "uint8" }
+          {
+            "internalType": "uint256",
+            "name": "price",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "listed",
+            "type": "bool"
+          },
+          {
+            "internalType": "uint8",
+            "name": "level",
+            "type": "uint8"
+          }
         ],
         "internalType": "struct Marketplace.MarketItem[]",
         "name": "",
@@ -248,24 +310,60 @@
     "type": "function"
   },
   {
-    "inputs": [{ "internalType": "uint32", "name": "_id", "type": "uint32" }],
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_id",
+        "type": "uint32"
+      }
+    ],
     "name": "getPriceById",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [{ "internalType": "uint256", "name": "_id", "type": "uint256" }],
-    "name": "getTokenURI",
-    "outputs": [{ "internalType": "string", "name": "", "type": "string" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint32", "name": "_begin", "type": "uint32" },
-      { "internalType": "uint32", "name": "_end", "type": "uint32" },
-      { "internalType": "uint8", "name": "_level", "type": "uint8" }
+      {
+        "internalType": "uint256",
+        "name": "_id",
+        "type": "uint256"
+      }
+    ],
+    "name": "getTokenURI",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_begin",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_end",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint8",
+        "name": "_level",
+        "type": "uint8"
+      }
     ],
     "name": "init",
     "outputs": [],
@@ -276,24 +374,46 @@
     "inputs": [],
     "name": "itemIds",
     "outputs": [
-      { "internalType": "uint256", "name": "_value", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "_value",
+        "type": "uint256"
+      }
     ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "_holder", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "_holder",
+        "type": "address"
+      }
     ],
     "name": "itemsbyholder",
-    "outputs": [{ "internalType": "uint32[]", "name": "", "type": "uint32[]" }],
+    "outputs": [
+      {
+        "internalType": "uint32[]",
+        "name": "",
+        "type": "uint32[]"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint8", "name": "level", "type": "uint8" },
-      { "internalType": "uint32", "name": "id", "type": "uint32" }
+      {
+        "internalType": "uint8",
+        "name": "level",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint32",
+        "name": "id",
+        "type": "uint32"
+      }
     ],
     "name": "makeMarketItem",
     "outputs": [],
@@ -301,7 +421,13 @@
     "type": "function"
   },
   {
-    "inputs": [{ "internalType": "uint32", "name": "", "type": "uint32" }],
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
     "name": "marketItembyId",
     "outputs": [
       {
@@ -309,9 +435,21 @@
         "name": "holder",
         "type": "address"
       },
-      { "internalType": "uint256", "name": "price", "type": "uint256" },
-      { "internalType": "bool", "name": "listed", "type": "bool" },
-      { "internalType": "uint8", "name": "level", "type": "uint8" }
+      {
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "listed",
+        "type": "bool"
+      },
+      {
+        "internalType": "uint8",
+        "name": "level",
+        "type": "uint8"
+      }
     ],
     "stateMutability": "view",
     "type": "function"
@@ -319,13 +457,23 @@
   {
     "inputs": [],
     "name": "marketingWallet",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "uint32", "name": "_tokenId", "type": "uint32" }
+      {
+        "internalType": "uint32",
+        "name": "_tokenId",
+        "type": "uint32"
+      }
     ],
     "name": "mintNFT",
     "outputs": [],
@@ -334,8 +482,16 @@
   },
   {
     "inputs": [
-      { "internalType": "uint32", "name": "_tokenId", "type": "uint32" },
-      { "internalType": "uint256", "name": "_price", "type": "uint256" }
+      {
+        "internalType": "uint32",
+        "name": "_tokenId",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_price",
+        "type": "uint256"
+      }
     ],
     "name": "mintNFTforList",
     "outputs": [],
@@ -343,28 +499,64 @@
     "type": "function"
   },
   {
-    "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "name": "nftprice",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [],
     "name": "owner",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
-    "inputs": [{ "internalType": "uint256", "name": "_id", "type": "uint256" }],
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_id",
+        "type": "uint256"
+      }
+    ],
     "name": "ownerOf",
-    "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
-    "inputs": [{ "internalType": "uint32", "name": "_id", "type": "uint32" }],
+    "inputs": [
+      {
+        "internalType": "uint32",
+        "name": "_id",
+        "type": "uint32"
+      }
+    ],
     "name": "purchaseItem",
     "outputs": [],
     "stateMutability": "payable",
@@ -380,13 +572,23 @@
   {
     "inputs": [],
     "name": "royalties",
-    "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
     "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "addr", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "addr",
+        "type": "address"
+      }
     ],
     "name": "setMarketingWallet",
     "outputs": [],
@@ -395,7 +597,11 @@
   },
   {
     "inputs": [
-      { "internalType": "uint256[]", "name": "_price", "type": "uint256[]" }
+      {
+        "internalType": "uint256[]",
+        "name": "_price",
+        "type": "uint256[]"
+      }
     ],
     "name": "setNFTPrice",
     "outputs": [],
@@ -404,7 +610,11 @@
   },
   {
     "inputs": [
-      { "internalType": "uint256", "name": "_royalties", "type": "uint256" }
+      {
+        "internalType": "uint256",
+        "name": "_royalties",
+        "type": "uint256"
+      }
     ],
     "name": "setRoyalties",
     "outputs": [],
@@ -413,7 +623,11 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "addr", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "addr",
+        "type": "address"
+      }
     ],
     "name": "setScorp",
     "outputs": [],
@@ -422,7 +636,11 @@
   },
   {
     "inputs": [
-      { "internalType": "address", "name": "newOwner", "type": "address" }
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
     ],
     "name": "transferOwnership",
     "outputs": [],
@@ -431,8 +649,16 @@
   },
   {
     "inputs": [
-      { "internalType": "uint32", "name": "_id", "type": "uint32" },
-      { "internalType": "uint256", "name": "_price", "type": "uint256" }
+      {
+        "internalType": "uint32",
+        "name": "_id",
+        "type": "uint32"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_price",
+        "type": "uint256"
+      }
     ],
     "name": "updatePriceById",
     "outputs": [],
