@@ -1,7 +1,7 @@
 {
-  "kovan": {
+  "bsc": {
     "Marketplace": {
-      "address": "0xBB43c0A4d93445EB717D702888Eb807e8688D4F6"
+      "address": "0x43519CF5E922cE3C61B48Da16004C01f9Cc1Cab1"
     }
   }
 }
